@@ -1,0 +1,66 @@
+
+
+.bgLinear{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(254, 212, 135, 0.74), rgba(254, 222, 164, 0.56), rgba(254, 227, 177, 0.48), rgba(253, 197, 94, 1), rgba(255, 241, 215, 0.25));
+}
+
+
+[multiple]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, select:focus, textarea:focus {
+    --tw-ring-color: #F54748;
+    border-color: #F54748;
+}
+
+.peer:focus~.peer-focus\:text-blue-600 {
+    --tw-text-opacity: 1;
+    color: #F54748;
+}
+
+:root{
+    --swiper-pagination-color: #F54748 !important;
+    --swiper-pagination-bullet-height: 20px !important;
+    --swiper-pagination-bullet-width: 20px !important;
+}
+.mySwiper2{
+    height: 450px;
+}
+
+@media (max-width: 589px) {
+    .mySwiper2 swiper-slide {
+        height: 320px !important;
+    }
+    .mySwiper3 swiper-slide{
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+@media (min-width: 590px) {
+    .mySwiper2 swiper-slide {
+        height: 360px !important;
+    }
+    
+}
+@media (min-width: 767px) {
+    .mySwiper2 swiper-slide {
+        height: 380px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .mySwiper2 swiper-slide {
+        height: 390px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mySwiper2 swiper-slide {
+        height: 360px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
