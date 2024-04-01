@@ -56,6 +56,29 @@
     }
 }
 
+/* questions */
+
+.bglinear{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FDC55E 73.18%);
+}
+.arrow{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FDC55E 73.18%);
+    padding: 8px;
+    color: gray;
+    border-radius: 8px;
+    
+}
+
+
+.dark\:text-white {
+    --tw-text-opacity: 1;
+    color: #F54748;
+}
+
+.arrow.rotate-180{
+    color: black;
+
+}
 
 
 
