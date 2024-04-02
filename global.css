@@ -77,9 +77,14 @@
 
 .arrow.rotate-180{
     color: black;
-
 }
 
+div[drawer-backdrop]{
+    width: calc(100% - 16rem);
+    z-index: 20;
+    right: 0;
+    left: auto;
+}
 
 
 
