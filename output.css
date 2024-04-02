@@ -833,6 +833,10 @@ video {
   margin-inline-end: 2rem;
 }
 
+.ms-0 {
+  margin-inline-start: 0px;
+}
+
 .ms-1 {
   margin-inline-start: 0.25rem;
 }
@@ -927,10 +931,6 @@ video {
 
 .mt-\[100px\] {
   margin-top: 100px;
-}
-
-.ms-0 {
-  margin-inline-start: 0px;
 }
 
 .line-clamp-2 {
@@ -1040,6 +1040,18 @@ video {
   height: 100vh;
 }
 
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1080,6 +1092,10 @@ video {
   width: 100px;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -1092,20 +1108,12 @@ video {
   width: 80%;
 }
 
-.w-\[80px\] {
-  width: 80px;
-}
-
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[120px\] {
-  width: 120px;
 }
 
 .max-w-screen-xl {
@@ -1993,20 +2001,12 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:ms-7 {
-    margin-inline-start: 1.75rem;
-  }
-
   .sm\:h-\[300px\] {
     height: 300px;
   }
 
   .sm\:h-\[450px\] {
     height: 450px;
-  }
-
-  .sm\:w-\[100px\] {
-    width: 100px;
   }
 
   .sm\:w-\[300px\] {
@@ -2062,6 +2062,10 @@ video {
     margin-inline-start: 5rem;
   }
 
+  .md\:ms-7 {
+    margin-inline-start: 1.75rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -2082,10 +2086,6 @@ video {
     margin-top: 5rem;
   }
 
-  .md\:ms-7 {
-    margin-inline-start: 1.75rem;
-  }
-
   .md\:h-\[270px\] {
     height: 270px;
   }
@@ -2100,6 +2100,10 @@ video {
 
   .md\:h-\[400px\] {
     height: 400px;
+  }
+
+  .md\:min-h-\[70vh\] {
+    min-height: 70vh;
   }
 
   .md\:w-\[120px\] {
@@ -2214,6 +2218,10 @@ video {
     margin-bottom: 1.75rem;
   }
 
+  .lg\:ms-0 {
+    margin-inline-start: 0px;
+  }
+
   .lg\:ms-5 {
     margin-inline-start: 1.25rem;
   }
@@ -2246,10 +2254,6 @@ video {
     margin-top: 1.75rem;
   }
 
-  .lg\:ms-0 {
-    margin-inline-start: 0px;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -2280,6 +2284,10 @@ video {
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:min-h-\[70vh\] {
+    min-height: 70vh;
   }
 
   .lg\:w-3\/4 {
