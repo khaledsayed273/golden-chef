@@ -43,354 +43,472 @@
     <body>
 
         <nav
-        class="bg-white absolute w-full z-20 top-0 start-0 ">
-        <div
-            class="container absolute left-0 top-0 right-0 z-[1] flex flex-wrap items-center justify-between mx-auto py-2 lg:py-4 px-2 lg:px-10">
-            <a href="/index.html"
-                class="flex items-center flex-col space-x-3 rtl:space-x-reverse">
-                <img src="/images/logo.svg" alt>
-                <img class="mt-2 w-[80px] sm:w-[100px]"
-                    src="/images/text-logo.svg" alt>
-            </a>
+            class="bg-white absolute w-full z-20 top-0 start-0 ">
             <div
-                class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
-                <a href="contact.html"
-                    class="hidden font-bold lg:block capitalize text-white bg-red hover:opacity-50 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-2xl text-sm px-7 py-2 text-center ">
-                    contact us
-                </a>
+                class="container absolute left-0 top-0 right-0 z-[1] flex flex-wrap items-center justify-between mx-auto py-2 lg:py-4 px-2 lg:px-10">
+                <a class="mt-3 md:mt-0" href="/index.html">
+                    <img class="w-[100px] md:w-[120px]" src="/images/logo.svg"
+                        alt>
 
-                <button data-drawer-target="separator-sidebar"
-                    data-drawer-toggle="separator-sidebar"
-                    aria-controls="separator-sidebar" type="button"
-                    class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
-                    <span class="sr-only">Open sidebar</span>
-                    <svg class="w-5 h-5" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-
-            </div>
-            <div
-                class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
-                id="navbar-sticky">
-                <ul
-                    class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:bg-transparent lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0   ">
-                    <li class="flex justify-center">
-                        <a href="/index.html"
-                            class="block hover:text-red capitalize py-2 px-3 font-bold "
-                            aria-current="page">home</a>
-                    </li>
-                    <li class="flex justify-center">
-                        <a href="siwa.html"
-                            class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">siwa</a>
-                    </li>
-                    <li class="flex justify-center">
-                        <a href="/about.html"
-                            class="block text-red capitalize py-2 px-3 font-bold ">about</a>
-                    </li>
-                    <li class="flex justify-center">
-                        <a href="questions.html"
-                            class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">questions</a>
-                    </li>
-                    <li class="flex justify-center">
-                        <a href="seasons.html"
-                            class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">seasons</a>
-                    </li>
-                    <a href="contact.html" type="button"
-                        class="lg:hidden font-bold mt-2 capitalize text-white bg-red hover:opacity-50 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-2xl text-sm px-7 w-[130px] mx-auto py-2 text-center ">
-                        contact us
-                    </a>
-                </ul>
-            </div>
-        </div>
-
-        <aside id="separator-sidebar"
-            class="fixed  lg:hidden top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0"
-            aria-label="Sidebar">
-            <div
-                class="h-full px-3 py-4 overflow-y-auto bg-gray-800">
-                <ul class="space-y-2 font-medium">
-                    <li>
-                        <a href="/index.html"
-                            class="flex  items-center p-2  rounded-lg  hover:bg-gray-700 text-white  group">
-                            <svg
-                                class="w-6 h-6 "
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-
-                            <span class="ms-3 ">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/siwa.html"
-                            class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
-                            <svg
-                                class="w-6 h-6 "
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path stroke="currentColor"
-                                    stroke-linecap="round" stroke-width="2"
-                                    d="M3 21h18M4 18h16M6 10v8m4-8v8m4-8v8m4-8v8M4 9.5v-.955a1 1 0 0 1 .458-.84l7-4.52a1 1 0 0 1 1.084 0l7 4.52a1 1 0 0 1 .458.84V9.5a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5Z" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ms-3 whitespace-nowrap">Siwa</span>
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html"
-                            class="flex items-center p-2  rounded-lg text-yellow hover:bg-gray-700  group">
-                            <svg
-                                class="w-6 h-6 "
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M7 2a2 2 0 0 0-2 2v1a1 1 0 0 0 0 2v1a1 1 0 0 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H7Zm3 8a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm-1 7a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3 1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-
-                            <span
-                                class="flex-1 ms-3 whitespace-nowrap">About</span>
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="questions.html"
-                            class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
-                            <svg class="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.008-3.018a1.502 1.502 0 0 1 2.522 1.159v.024a1.44 1.44 0 0 1-1.493 1.418 1 1 0 0 0-1.037.999V14a1 1 0 1 0 2 0v-.539a3.44 3.44 0 0 0 2.529-3.256 3.502 3.502 0 0 0-7-.255 1 1 0 0 0 2 .076c.014-.398.187-.774.48-1.044Zm.982 7.026a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2h-.01Z" clip-rule="evenodd"/>
-                              </svg>
-                              
-                            <span
-                                class="flex-1 ms-3 whitespace-nowrap">Questions</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="seasons.html"
-                            class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
-                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M5.5 3a1 1 0 0 0 0 2H7v2.333a3 3 0 0 0 .556 1.74l1.57 2.814A1.1 1.1 0 0 0 9.2 12a.998.998 0 0 0-.073.113l-1.57 2.814A3 3 0 0 0 7 16.667V19H5.5a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2H17v-2.333a3 3 0 0 0-.56-1.745l-1.616-2.82a1 1 0 0 0-.067-.102 1 1 0 0 0 .067-.103l1.616-2.819A3 3 0 0 0 17 7.333V5h1.5a1 1 0 1 0 0-2h-13Z" clip-rule="evenodd"/>
-                              </svg>
-                              
-                            <span
-                                class="flex-1 ms-3 whitespace-nowrap">Seasons</span>
-                        </a>
-                    </li>
-                    <li>
+                    <div
+                        class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
                         <a href="contact.html"
-                            class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
-                            <svg class="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z"/>
-                              </svg>
-                            <span class="flex-1 ms-3 whitespace-nowrap">Contact Us</span>
+                            class="hidden font-bold lg:block capitalize text-white bg-red hover:opacity-50 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-2xl text-sm px-7 py-2 text-center ">
+                            contact us
                         </a>
-                    </li>
-                    
-                </ul>
 
-            </div>
-        </aside>
+                        <button data-drawer-target="separator-sidebar"
+                            data-drawer-toggle="separator-sidebar"
+                            aria-controls="separator-sidebar" type="button"
+                            class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+                            <span class="sr-only">Open sidebar</span>
+                            <svg class="w-5 h-5" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
 
-    </nav>
-
-        <header class="mt-[100px]">
-            <div class="container mx-auto py-4 px-3 sm:px-5  lg:px-20">
-                <div
-                    class="flex flex-col md:flex-row justify-between md:items-center">
-                    <div class="mt-10 md:mt-20 lg:mt-10">
-                        <div
-                            class="font-bold text-3xl lg:text-[40px] xl:text-[58px] mb-2">
-                            <h1 class="lg:mb-7">Golden <span
-                                    class="text-red">Chef</span></h1>
-                            <h2 class="ms-5 mt-2">Festival <span
-                                    class="text-yellow">Competition.</span></h2>
-                        </div>
-                        <p
-                            class="text-sm md:text-base font-medium mt-5 lg:mt-7 lg:text-lg xl:text-xl lg:w-3/4 ">Best
-                            cooks and best
-                            delivery guys all at your
-                            service. Hot tasty food will reach you .</p>
-                        <div class="flex justify-center md:justify-start mt-7 md:mt-16">
-                            <a href="contact.html"
-                                class="bg-red inline-block font-bold text-white py-2.5 px-7  rounded-3xl hover:opacity-50 capitalize">contact
-                                us</a>
-                        </div>
                     </div>
                     <div
-                        class="mt-5  md:mt-0 lg:mt-14 w-full h-[400px] md:w-[540px] md:h-[350px] lg:w-[640px] lg:h-[450px] xl:w-[540px] xl:h-[500px]">
-                        <img class="w-full h-full" src="/images/chef.svg"
-                            alt="chef">
+                        class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:bg-transparent lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0   ">
+                            <li class="flex justify-center">
+                                <a href="/index.html"
+                                    class="block hover:text-red capitalize py-2 px-3 font-bold "
+                                    aria-current="page">home</a>
+                            </li>
+                            <li class="flex justify-center">
+                                <a href="siwa.html"
+                                    class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">siwa</a>
+                            </li>
+                            <li class="flex justify-center">
+                                <a href="/about.html"
+                                    class="block text-red capitalize py-2 px-3 font-bold ">about</a>
+                            </li>
+                            <li class="flex justify-center">
+                                <a href="questions.html"
+                                    class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">questions</a>
+                            </li>
+                            <li class="flex justify-center">
+                                <a href="seasons.html"
+                                    class="block hover:text-red capitalize py-2 px-3 font-bold text-gray-900">seasons</a>
+                            </li>
+                            <a href="contact.html" type="button"
+                                class="lg:hidden font-bold mt-2 capitalize text-white bg-red hover:opacity-50 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-2xl text-sm px-7 w-[130px] mx-auto py-2 text-center ">
+                                contact us
+                            </a>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </header>
 
-        <section class="mt-10 md:mt-20">
-            <div class="container mx-auto px-3 lg:px-10">
-                <h1
-                    class="text-center font-bold capitalize text-lg md:text-xl lg:text-2xl xl:text-3xl">
-                    Golden
-                    <span class="text-red">chef </span>
-                    festival
-                    <span class="text-yellow">competition</span>
-                </h1>
-                <p
-                    class="text-center mt-7 font-medium lg:w-3/4 xl:w-1/2 mx-auto">Lorem
-                    Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy
-                    text ever since the
-                </p>
+                <aside id="separator-sidebar"
+                    class="fixed  lg:hidden top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0"
+                    aria-label="Sidebar">
+                    <div
+                        class="h-full px-3 py-4 overflow-y-auto bg-gray-800">
+                        <ul class="space-y-2 font-medium">
+                            <li>
+                                <a href="/index.html"
+                                    class="flex  items-center p-2  rounded-lg  hover:bg-gray-700 text-white  group">
+                                    <svg
+                                        class="w-6 h-6 "
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
 
-                <!-- images in border -->
-                <div class="border-yellow border my-16">
-                    <div class="grid md:grid-cols-2 gap-5">
+                                    <span class="ms-3 ">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/siwa.html"
+                                    class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
+                                    <svg
+                                        class="w-6 h-6 "
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-width="2"
+                                            d="M3 21h18M4 18h16M6 10v8m4-8v8m4-8v8m4-8v8M4 9.5v-.955a1 1 0 0 1 .458-.84l7-4.52a1 1 0 0 1 1.084 0l7 4.52a1 1 0 0 1 .458.84V9.5a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5Z" />
+                                    </svg>
 
-                        <div
-                            class="order-2 md:order-1 rounded-3xl overflow-hidden h-[350px] lg:h-[350px] 2xl:h-[450px] w-full">
-                            <img style="object-fit: cover;"
-                                class="w-full h-full" src="/images/image1.jpg"
-                                alt>
-                        </div>
-                        <div class="mb-5 order-1">
-                            <div class="p-5">
-                                <h1
-                                    class="text-yellow font-bold text-center mb-7 mt-5 text-3xl lg:text-4xl">About
-                                    us ..</h1>
-                                <p
-                                    class="font-medium xl:text-2xl lg:mt-20 text-center xl:leading-9">Welcome
-                                    to Burger Bliss, where we take your
-                                    cravings to a whole new level! Our
-                                    mouthwatering
-                                    burgers are made from 100% beef and are
-                                    served
-                                    on freshly baked buns.
-                                    Welcome to Burger Bliss, where we take your
-                                    cravings
-                                </p>
+                                    <span
+                                        class="flex-1 ms-3 whitespace-nowrap">Siwa</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="flex items-center p-2  rounded-lg text-yellow hover:bg-gray-700  group">
+                                    <svg
+                                        class="w-6 h-6 "
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M7 2a2 2 0 0 0-2 2v1a1 1 0 0 0 0 2v1a1 1 0 0 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H7Zm3 8a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm-1 7a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3 1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <span
+                                        class="flex-1 ms-3 whitespace-nowrap">About</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="questions.html"
+                                    class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
+                                    <svg class="w-6 h-6 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.008-3.018a1.502 1.502 0 0 1 2.522 1.159v.024a1.44 1.44 0 0 1-1.493 1.418 1 1 0 0 0-1.037.999V14a1 1 0 1 0 2 0v-.539a3.44 3.44 0 0 0 2.529-3.256 3.502 3.502 0 0 0-7-.255 1 1 0 0 0 2 .076c.014-.398.187-.774.48-1.044Zm.982 7.026a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2h-.01Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <span
+                                        class="flex-1 ms-3 whitespace-nowrap">Questions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="seasons.html"
+                                    class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
+                                    <svg class="w-6 h-6" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M5.5 3a1 1 0 0 0 0 2H7v2.333a3 3 0 0 0 .556 1.74l1.57 2.814A1.1 1.1 0 0 0 9.2 12a.998.998 0 0 0-.073.113l-1.57 2.814A3 3 0 0 0 7 16.667V19H5.5a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2H17v-2.333a3 3 0 0 0-.56-1.745l-1.616-2.82a1 1 0 0 0-.067-.102 1 1 0 0 0 .067-.103l1.616-2.819A3 3 0 0 0 17 7.333V5h1.5a1 1 0 1 0 0-2h-13Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                    <span
+                                        class="flex-1 ms-3 whitespace-nowrap">Seasons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
+                                    <svg class="w-6 h-6 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z" />
+                                    </svg>
+                                    <span
+                                        class="flex-1 ms-3 whitespace-nowrap">Contact
+                                        Us</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </aside>
+
+            </nav>
+
+            <header class="mt-[100px]">
+                <div class="container mx-auto py-4 px-3 sm:px-5  lg:px-20">
+                    <div
+                        class="flex flex-col md:flex-row justify-between md:items-center">
+                        <div class="mt-10 md:mt-20 lg:mt-10">
+                            <div
+                                class="font-bold text-3xl lg:text-[40px] xl:text-[58px] mb-2">
+                                <h1 class="lg:mb-7">Golden <span
+                                        class="text-red">Chef</span></h1>
+                                <h2 class="ms-5 mt-2">Festival <span
+                                        class="text-yellow">Competition.</span></h2>
+                            </div>
+                            <p
+                                class="text-sm md:text-base font-medium mt-5 lg:mt-7 lg:text-lg xl:text-xl lg:w-3/4 ">Best
+                                cooks and best
+                                delivery guys all at your
+                                service. Hot tasty food will reach you .</p>
+                            <div
+                                class="flex justify-center md:justify-start mt-7 md:mt-16">
+                                <a href="contact.html"
+                                    class="bg-red inline-block font-bold text-white py-2.5 px-7  rounded-3xl hover:opacity-50 capitalize">contact
+                                    us</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid md:grid-cols-2 md:mt-10 gap-5">
                         <div
-                            class="order-2  rounded-3xl overflow-hidden h-[350px] lg:h-[350px] 2xl:h-[450px] w-full">
-                            <img style="object-fit: cover;"
-                                class="w-full h-full" src="/images/image2.jpg"
-                                alt>
-                        </div>
-                        <div class="mb-5 order-1">
-                            <div class="p-5">
-                                <h1
-                                    class="text-red font-bold text-center mb-7 mt-5 text-3xl lg:text-4xl">you
-                                    can learn more ..</h1>
-                                <p
-                                    class="font-medium xl:text-2xl lg:mt-20 text-center xl:leading-9">Welcome
-                                    to Burger Bliss, where we take your
-                                    cravings to a whole new level! Our
-                                    mouthwatering
-                                    burgers are made from 100% beef and are
-                                    served
-                                    on freshly baked buns.
-                                    Welcome to Burger Bliss, where we take your
-                                    cravings
-                                </p>
-                            </div>
+                            class="mt-5  md:mt-0 lg:mt-14 w-full h-[400px] md:w-[540px] md:h-[350px] lg:w-[640px] lg:h-[450px] xl:w-[540px] xl:h-[500px]">
+                            <img class="w-full h-full" src="/images/chef.svg"
+                                alt="chef">
                         </div>
                     </div>
+                </div>
+            </header>
+
+            <section class="mt-10 md:mt-20">
+                <div class="container mx-auto px-3 lg:px-10">
+                    <h1
+                        class="text-center font-bold capitalize text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                        Golden
+                        <span class="text-red">chef </span>
+                        festival
+                        <span class="text-yellow">competition</span>
+                    </h1>
                     <p
-                        class="text-center my-5 p-2 md:p-5 font-medium xl:leading-9">
-
-                        Welcome to Burger Bliss, where we take your cravings to
-                        a whole new level! Our mouthwatering burgers are made
-                        from 100% beef and are served on freshly baketgfjg
-                        gcfjyhj ghgmhm hdgf uns.
-                        Welcome to Burger Bliss, where we take your
-                        cravingsWelcome to Burger Bliss, where we take your
-                        cravings to a whole new level! Our mouthwatering burgers
-                        are made from 100% beef and are served on freshly
-                        Welcome to Burger Bliss, where we take your cravings
-                        Welcome to Burger Bliss, where we take your cravings to
-                        a whole new level! Our mouthwatering burgers are made
-                        from 100% beef and are served on
-                        Welcome to Burger Bliss, where we take your cravings
-                        Welcome to Burger Bliss, where we take your cravings to
-                        a whole new level! Our mouthwatering burgers are made
-                        from 100% beef and are served on freshly baketgfjg
-                        gcfjyhj ghgmhm hdgf uns.
-
+                        class="text-center mt-7 font-medium lg:w-3/4 xl:w-1/2 mx-auto">Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting
+                        industry. Lorem Ipsum has been the industry's standard
+                        dummy
+                        text ever since the
                     </p>
+
+                    <!-- images in border -->
+                    <div class="border-yellow border my-16">
+                        <div class="grid md:grid-cols-2 gap-5">
+
+                            <div
+                                class="order-2 md:order-1 rounded-3xl overflow-hidden h-[350px] lg:h-[350px] 2xl:h-[450px] w-full">
+                                <img style="object-fit: cover;"
+                                    class="w-full h-full"
+                                    src="/images/image1.jpg"
+                                    alt>
+                            </div>
+                            <div class="mb-5 order-1">
+                                <div class="p-5">
+                                    <h1
+                                        class="text-yellow font-bold text-center mb-7 mt-5 text-3xl lg:text-4xl">About
+                                        us ..</h1>
+                                    <p
+                                        class="font-medium xl:text-2xl lg:mt-20 text-center xl:leading-9">Welcome
+                                        to Burger Bliss, where we take your
+                                        cravings to a whole new level! Our
+                                        mouthwatering
+                                        burgers are made from 100% beef and are
+                                        served
+                                        on freshly baked buns.
+                                        Welcome to Burger Bliss, where we take
+                                        your
+                                        cravings
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:mt-10 gap-5">
+                            <div
+                                class="order-2  rounded-3xl overflow-hidden h-[350px] lg:h-[350px] 2xl:h-[450px] w-full">
+                                <img style="object-fit: cover;"
+                                    class="w-full h-full"
+                                    src="/images/image2.jpg"
+                                    alt>
+                            </div>
+                            <div class="mb-5 order-1">
+                                <div class="p-5">
+                                    <h1
+                                        class="text-red font-bold text-center mb-7 mt-5 text-3xl lg:text-4xl">you
+                                        can learn more ..</h1>
+                                    <p
+                                        class="font-medium xl:text-2xl lg:mt-20 text-center xl:leading-9">Welcome
+                                        to Burger Bliss, where we take your
+                                        cravings to a whole new level! Our
+                                        mouthwatering
+                                        burgers are made from 100% beef and are
+                                        served
+                                        on freshly baked buns.
+                                        Welcome to Burger Bliss, where we take
+                                        your
+                                        cravings
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p
+                            class="text-center my-5 p-2 md:p-5 font-medium xl:leading-9">
+
+                            Welcome to Burger Bliss, where we take your cravings
+                            to
+                            a whole new level! Our mouthwatering burgers are
+                            made
+                            from 100% beef and are served on freshly baketgfjg
+                            gcfjyhj ghgmhm hdgf uns.
+                            Welcome to Burger Bliss, where we take your
+                            cravingsWelcome to Burger Bliss, where we take your
+                            cravings to a whole new level! Our mouthwatering
+                            burgers
+                            are made from 100% beef and are served on freshly
+                            Welcome to Burger Bliss, where we take your cravings
+                            Welcome to Burger Bliss, where we take your cravings
+                            to
+                            a whole new level! Our mouthwatering burgers are
+                            made
+                            from 100% beef and are served on
+                            Welcome to Burger Bliss, where we take your cravings
+                            Welcome to Burger Bliss, where we take your cravings
+                            to
+                            a whole new level! Our mouthwatering burgers are
+                            made
+                            from 100% beef and are served on freshly baketgfjg
+                            gcfjyhj ghgmhm hdgf uns.
+
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Aside and gallery -->
-        <aside>
-            <div class="container mx-auto py-4 px-3 sm:px-5 lg:px-10 ">
+            <!--Aside and gallery -->
+            <aside>
+                <div class="container mx-auto py-4 px-3 sm:px-5 lg:px-10 ">
 
-                <!--gallery -->
-                <h1
-                    class="text-center text-red font-bold capitalize text-lg md:text-xl lg:text-2xl xl:text-3xl">
-                    Meet our team
-                </h1>
-                <p
-                    class="text-center mt-7 font-medium lg:w-3/4 xl:w-1/2 mx-auto">
-                    Meet
-                    our passionate and talented team, committed to delivering
-                    exceptional results, driving innovation, and transforming
-                    your vision into reality.
-                </p>
+                    <!--gallery -->
+                    <h1
+                        class="text-center text-red font-bold capitalize text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                        Meet our team
+                    </h1>
+                    <p
+                        class="text-center mt-7 font-medium lg:w-3/4 xl:w-1/2 mx-auto">
+                        Meet
+                        our passionate and talented team, committed to
+                        delivering
+                        exceptional results, driving innovation, and
+                        transforming
+                        your vision into reality.
+                    </p>
 
-                <swiper-container class="mySwiper3  mt-20" init="false"
-                
-                    pagination="true" effect="coverflow" grab-cursor="true"
-                    centered-slides="true"
-                    slides-per-view="auto" coverflow-effect-rotate="50"
-                    coverflow-effect-stretch="0" coverflow-effect-depth="700"
-                    coverflow-effect-modifier="1"
-                    coverflow-effect-slide-shadows="true">
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <img src="/images/food.jpg" alt="image1">
-                    </swiper-slide>
-                </swiper-container>
-            </div>
-        </aside>
+                    <swiper-container class="mySwiper3  mt-20" init="false"
+                        pagination="true" effect="coverflow" grab-cursor="true"
+                        centered-slides="true"
+                        slides-per-view="auto" coverflow-effect-rotate="50"
+                        coverflow-effect-stretch="0"
+                        coverflow-effect-depth="700"
+                        coverflow-effect-modifier="1"
+                        coverflow-effect-slide-shadows="true">
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/images/food.jpg" alt="image1">
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </aside>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <footer class="mt-16 ">
+                <div class="mx-auto w-full max-w-screen-xl">
+                    <div
+                        class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-6 lg:py-8 ">
+                        <div class="flex items-center md:items-start justify-center md:justify-start">
+                            <a href="/index.html">
+                                <img class="w-[120px] md:w-[150px]" src="/images/logo.svg" alt="">
+    
+                            </a>
+                        </div>
+                        <div>
+                            <h2
+                                class="mb-6 text-sm text-red font-black uppercase ">Company</h2>
+                            <ul
+                                class="text-black  font-medium">
+                                <li class="mb-4">
+                                    <a href="index.html"
+                                        class=" hover:underline">Home</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="siwa.html"
+                                        class="hover:underline">Siwa</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="about.html"
+                                        class="hover:underline">About</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="questions.html"
+                                        class="hover:underline">Questions</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="seasons.html"
+                                        class="hover:underline">Seasons</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:ms-7 lg:ms-0">
+                            <h2
+                                class="mb-6 text-sm font-black text-red uppercase ">Contact
+                                Us</h2>
+                            <ul
+                                class="text-black font-medium">
+                                
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Twitter</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Instagram</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Facebook</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="contact.html"
+                                        class="hover:underline">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2
+                                class="mb-6 text-sm font-black text-red uppercase ">Get
+                                in touch</h2>
+                            <p class="text-black font-medium">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor</p>
+                        </div>
+    
+                    </div>
+                    <div
+                        class="px-4 py-6  flex items-center justify-center">
+                        <span
+                            class="text-sm text-black font-bold sm:text-center">
+                            © <a class="text-[#d65102] font-black" target="_blank"
+                                href="https://megatron-soft.com">Megatron</a>. 2024
+                            Company | All Rights Reserved
+                        </span>
+                    </div>
+                </div>
+            </footer>
 
-        <script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+            <script>
             const swiperEl = document.querySelector('.mySwiper3')
 
             Object.assign(swiperEl, {
@@ -431,8 +549,8 @@
 
         </script>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
         </script>
-    </body>
-</html>
+        </body>
+    </html>
