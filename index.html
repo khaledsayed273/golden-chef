@@ -1087,12 +1087,12 @@
                 if(language.checked === true){
                 // window.location = "en"
                 document.documentElement.setAttribute("lang", "en")
-                document.documentElement.dir = "ltr"
+                document.body.dir = "ltr"
                 
             }else{
                 // window.location = "ar"
                 document.documentElement.setAttribute("lang", "ar")
-                document.documentElement.dir = "rtl"
+                document.body.dir = "rtl"
             }
             }
             language.onchange = () => {
