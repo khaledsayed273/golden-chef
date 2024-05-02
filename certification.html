@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>certification</title>
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+            rel="stylesheet" />
+        <style>
+
+            swiper-container {
+              width: 100%;
+              height: 400px;
+            }
+            swiper-container .swiper-pagination-bullet {
+              background-color: red !important;
+            }
+
+            swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 300px;
+            }
+        
+            swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+        </style>
+
+        <link rel="stylesheet" href="./global.css" />
+        <link href="./output.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <nav
+            class="bg-white absolute w-full z-20 top-0 start-0 ">
+            <div
+                class="container mt-1 md:mt-0 absolute left-0 top-0 right-0 z-[1] flex flex-wrap items-center justify-between mx-auto py-2 lg:py-4 px-2 lg:px-10">
+                <a class href="/index.html">
+                    <img class="w-[100px] md:w-[120px]" src="/images/logo.svg"
+                        alt>
+
+                </a>
+                <div
+                    class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+
+                    <label class="inline-flex items-center cursor-pointer">
+                        <input id="language" type="checkbox" value
+                            class="sr-only peer" checked>
+                        <span
+                            class="me-3 text-sm font-black text-gray-900 ">Arabic</span>
+
+                        <div
+                            class="relative w-9 h-5 bg-yellow peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-red-600"></div>
+                        <span
+                            class="ms-3 text-sm font-black text-gray-900 ">English</span>
+                    </label>
+
+                    <button class="mt-0 p-2 lg:hidden"
+                        data-drawer-target="separator-sidebar"
+                        data-drawer-toggle="separator-sidebar"
+                        aria-controls="separator-sidebar" type="button"
+                        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-5 h-5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+
+                </div>
+                <div
+                    class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+                    id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:bg-transparent lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0   ">
+                        <li class="flex  justify-center">
+                            <a href="/index.html"
+                                class="block hover:text-red  text-gray-900 capitalize py-2 px-2 font-bold "
+                                aria-current="page">home</a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="siwa.html"
+                                class="block hover:text-red capitalize py-2 px-2 font-bold text-gray-900">siwa</a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="/about.html"
+                                class="block hover:text-red capitalize py-2 px-2 font-bold text-gray-900">about</a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="questions.html"
+                                class="block hover:text-red capitalize py-2 px-2 font-bold text-gray-900">questions</a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="seasons.html"
+                                class="block hover:text-red capitalize py-2 px-2 font-bold text-gray-900">seasons</a>
+                        </li>
+                        <li class="flex justify-center">
+                            <a href="certification.html"
+                                class="block text-red capitalize py-2 px-2 font-bold">certification</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <aside id="separator-sidebar"
+                class="fixed  lg:hidden top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full lg:translate-x-0"
+                aria-label="Sidebar">
+                <div
+                    class="h-full px-3 py-4 overflow-y-auto bg-gray-800">
+                    <ul class="space-y-2 font-medium">
+                        <li>
+                            <a href="/index.html"
+                                class="flex  items-center p-2  rounded-lg  text-white hover:bg-gray-700 group">
+                                <svg
+                                    class="w-6 h-6 "
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                <span class="ms-3 ">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/siwa.html"
+                                class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
+                                <svg
+                                    class="w-6 h-6 "
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor"
+                                        stroke-linecap="round" stroke-width="2"
+                                        d="M3 21h18M4 18h16M6 10v8m4-8v8m4-8v8m4-8v8M4 9.5v-.955a1 1 0 0 1 .458-.84l7-4.52a1 1 0 0 1 1.084 0l7 4.52a1 1 0 0 1 .458.84V9.5a.5.5 0 0 1-.5.5h-15a.5.5 0 0 1-.5-.5Z" />
+                                </svg>
+
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">Siwa</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
+                                <svg
+                                    class="w-6 h-6 "
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M7 2a2 2 0 0 0-2 2v1a1 1 0 0 0 0 2v1a1 1 0 0 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a1 1 0 1 0 0 2v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H7Zm3 8a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm-1 7a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3 1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="questions.html"
+                                class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700  group">
+                                <svg class="w-6 h-6 " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.008-3.018a1.502 1.502 0 0 1 2.522 1.159v.024a1.44 1.44 0 0 1-1.493 1.418 1 1 0 0 0-1.037.999V14a1 1 0 1 0 2 0v-.539a3.44 3.44 0 0 0 2.529-3.256 3.502 3.502 0 0 0-7-.255 1 1 0 0 0 2 .076c.014-.398.187-.774.48-1.044Zm.982 7.026a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2h-.01Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">Questions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="seasons.html"
+                                class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
+                                <svg class="w-6 h-6" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M5.5 3a1 1 0 0 0 0 2H7v2.333a3 3 0 0 0 .556 1.74l1.57 2.814A1.1 1.1 0 0 0 9.2 12a.998.998 0 0 0-.073.113l-1.57 2.814A3 3 0 0 0 7 16.667V19H5.5a1 1 0 1 0 0 2h13a1 1 0 1 0 0-2H17v-2.333a3 3 0 0 0-.56-1.745l-1.616-2.82a1 1 0 0 0-.067-.102 1 1 0 0 0 .067-.103l1.616-2.819A3 3 0 0 0 17 7.333V5h1.5a1 1 0 1 0 0-2h-13Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">Seasons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="certification.html"
+                                class="flex items-center p-2  rounded-lg hover:bg-gray-700 text-yellow  group">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                </svg>
+
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">Certification</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="flex items-center p-2  rounded-lg text-white hover:bg-gray-700 group">
+                                <svg class="w-6 h-6 " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z" />
+                                </svg>
+                                <span
+                                    class="flex-1 ms-3 whitespace-nowrap">Contact
+                                    Us</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </aside>
+
+        </nav>
+
+        <header class="mt-[100px] h-[60vh] md:h-[45vh] relative">
+            <div
+                class="container  relative mx-auto py-4 px-3 sm:px-5 lg:px-20 h-full flex justify-center items-center">
+                <div>
+                    <h1
+                        class="text-center font-black text-xl md:text-3xl mb-3 capitalize">Welcome
+                        to our website !</h1>
+                    <h2
+                        class="text-center font-bold text-lg md:text-2xl mb-2 text-black/75">Hello
+                        chef!</h2>
+                    <p
+                        class="text-center font-bold text-lg md:text-2xl text-black/75">Enter
+                        your serial number to get</p>
+                    <p
+                        class="text-center font-bold text-lg md:text-2xl text-black/75">your
+                        own certification .. </p>
+
+                    <form class="flex items-center max-w-lg mx-auto mt-7">
+                        <label for="voice-search" class="sr-only">Search</label>
+                        <div class="relative w-full">
+
+                            <input type="text" id="voice-search"
+                                class="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-2xl focus:ring-red-500 focus:border-red-500 block w-full placeholder:text-black  p-2.5 "
+                                placeholder="Enter your serial number"
+                                required />
+                            <button type="button"
+                                class="absolute inset-y-0 end-0 flex items-center pe-3">
+
+                            </button>
+                        </div>
+                        <a href="certificationDetails.html" type="submit"
+                            class="inline-flex items-center py-2.5 px-4 ms-2 text-sm font-medium text-white bg-red rounded-2xl border border-red hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
+                            <svg class="w-4 h-4 me-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20">
+                                <path stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>Search
+                        </a>
+                    </form>
+
+                </div>
+
+                <div
+                    class="left absolute left-0 -bottom-28 sm:bottom-auto  md:left-10 lg:left-28 2xl:left-72 -z-10">
+                    <svg class="h-[250px] md:h-[300px]" viewBox="0 0 203 485"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M202 1C152.908 22.2111 39.6532 98.4396 102.093 143.6C157.214 183.467 235.589 41.6333 102.093 39.3333C-31.4028 37.0333 -33.9866 320.7 102.093 484"
+                            stroke="#F54748" stroke-width="2"
+                            stroke-linejoin="round" stroke-dasharray="8 8" />
+                    </svg>
+
+                </div>
+            </div>
+            <div
+                class="right absolute right-0 top-0 md:top-10 -z-10">
+                <svg class="w-[140px] md:w-[189px] h-[100px] md:h-[130px]"  viewBox="0 0 189 130"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M188 6.42536C188 6.42536 149.028 13.249 103.361 38.4193C57.6946 63.5895 46.259 83.2172 46.259 83.2172M147.695 16.194C147.695 16.194 142.726 12.6977 138.744 11.2664C134.762 9.83502 126.675 7.4715 124.654 6.64691C122.636 5.82295 115.12 -0.263996 114.34 1.23702C113.56 2.73803 117.592 7.49785 120.518 8.5059C123.443 9.51396 125.479 9.82385 129.238 11.3129C132.998 12.8019 138.893 16.4925 139.978 16.7062C141.75 17.0563 142.594 15.4746 140.729 14.8875C138.864 14.3003 135.249 15.3074 133.027 15.3372C130.806 15.367 106.896 13.0039 103.899 12.2933C100.903 11.5827 93.6032 13.006 103.097 15.6579C112.59 18.3097 127.117 17.2668 135.216 18.5413C143.315 19.8187 143.315 19.8187 143.315 19.8187M151.121 16.9107C151.082 17.0058 135.053 26.2864 126.597 36.0829C118.141 45.8794 128.652 37.6411 130.484 36.1445C132.32 34.6485 137.656 30.8561 142.516 27.2789C145.301 25.2302 148.088 23.7589 150.161 22.704M150.161 22.704C151.006 20.1994 150.899 18.7712 152.596 18.6412C154.566 18.492 154.372 20.0399 153.308 20.9625C152.852 21.3566 151.703 21.9159 150.161 22.704ZM150.161 22.704C149.546 24.5224 148.913 26.7112 148.255 28.7515C147.656 30.6105 147.037 32.3436 146.397 33.5642C144.08 37.9691 132.467 49.5112 130.255 52.5869C128.045 55.6661 118.785 67.0647 120.106 68.1623C121.428 69.2598 124.517 64.6998 125.726 63.1828C126.747 61.8959 143.338 42.422 150.662 31.6816M150.662 31.6816C152 29.7167 153.029 28.048 153.595 26.8311C155.933 21.8192 156.945 17.337 157.372 14.7477M150.662 31.6816C150.044 33.2902 149.05 35.515 147.45 38.4436C143.518 45.6332 131.735 59.215 130.7 60.4553C129.665 61.6986 125.074 69.8931 132.902 61.8375C140.731 53.7788 147.383 44.0312 149.072 41.3672C150.764 38.7008 152.973 35.6245 154.886 29.3727C156.799 23.1238 155.732 22.0778 155.732 22.0778M149.383 25.1285C149.383 25.1285 129.004 42.7897 126.175 48.0263C123.344 53.2593 120.951 57.5458 128.704 49.3687C136.456 41.1916 141.389 35.5551 142.997 34.1191C144.605 32.6832 148.258 28.7551 148.258 28.7551M136.792 18.7859C132.516 20.6601 121.866 25.2775 117.431 26.7546C111.814 28.6251 103.79 31.7541 99.6334 32.3707C95.4766 32.9873 86.0386 34.0799 96.648 30.7361C107.255 27.3888 117.136 24.0002 120.604 22.7325C121.824 22.2875 123.161 21.5107 124.44 20.7627M124.44 20.7627C126.792 19.3872 128.933 18.1122 129.746 19.1972C130.177 19.7711 127.845 20.293 124.44 20.7627ZM124.44 20.7627C117.931 21.6634 107.5 22.3706 104.956 22.8775C101.08 23.6477 88.9198 25.5387 84.7121 25.9298C80.5043 26.3209 74.4472 26.9513 74.4472 26.9513C74.4472 26.9513 63.8044 26.4585 74.4013 24.0447C85.0014 21.6315 112.896 18.7834 112.896 18.7834L118.77 17.5763L118.774 17.574M116.513 46.9339C114.1 51.7183 109.847 60.3963 105.761 69.9188C99.5839 84.3254 101.149 81.7393 97.3307 89.7816C93.5159 97.8216 94.4442 91.2702 95.2662 89.154C96.0875 87.0407 98.0709 80.4944 99.7112 76.2643C100.598 73.9834 103.437 67.7477 106.434 61.2198M116.513 46.9339C116.652 46.4974 116.8 46.0348 116.957 45.5364C119.998 35.8861 121.108 31.2364 121.108 31.2364C121.108 31.2364 116.522 33.2101 108.351 43.5821C100.182 53.9576 98.1889 58.3221 97.0439 60.4758C95.8959 62.6288 93.2932 71.3325 99.1755 62.1524C105.057 52.9753 110.085 46.7126 112.45 44.3105C113.22 43.528 114.271 42.4623 115.286 41.3458M116.513 46.9339C113.934 54.9657 113.973 53.2864 109.676 65.0086C105.146 77.3664 111.193 67.4931 112.191 65.5185C113.192 63.5445 117.45 53.2055 119.758 44.86C121.643 38.0348 123.258 30.5871 123.782 28.0956M106.434 61.2198C106.435 61.2168 106.435 61.2139 106.435 61.2139M106.434 61.2198C104.659 63.0742 102.056 66.0362 99.8926 69.4398C96.2218 75.2136 93.722 81.4775 88.0051 89.9645C82.2882 98.4515 85.1606 90.8379 86.0584 88.843C86.9561 86.8482 95.7305 69.9587 101.494 62.7256C104.836 58.5317 107.767 55.7891 109.644 54.2267M106.434 61.2198C106.434 61.2198 106.438 61.2145 106.435 61.2139M106.435 61.2139C107.513 58.8656 108.612 56.4781 109.644 54.2267M109.644 54.2267L109.645 54.2237C111.072 51.1136 112.377 48.2597 113.343 46.0978C114.166 44.2592 114.79 42.6798 115.286 41.3458M115.286 41.3458C116.957 36.8132 117.104 35.1184 118.259 35.836C119.32 36.494 117.383 39.0297 115.286 41.3458ZM106.798 36.5526C104.264 36.7498 99.7769 37.1154 95.1343 37.5742L95.1312 37.5736M95.1312 37.5736C91.2883 37.9513 87.3446 38.3928 84.3182 38.8582C84.3182 38.8582 84.3182 38.8582 84.3152 38.8576M95.1312 37.5736C90.8931 36.5894 81.7033 34.7133 70.2613 33.8868C54.3937 32.743 45.9002 38.281 44.5798 38.9489C43.2601 39.6138 40.5108 41.8569 45.5804 40.4991C50.6531 39.142 53.9685 37.1852 65.0471 37.1676C73.0631 37.1558 80.7004 38.2524 84.3152 38.8576M84.3152 38.8576C83.4424 38.9925 82.648 39.1308 81.9525 39.2673C74.4268 40.7477 50.3098 48.0949 46.2448 49.6564C42.1798 51.218 32.8485 57.6216 47.4731 52.912C62.1007 48.2031 69.684 46.0421 72.2422 45.0389C72.8398 44.8077 74.3713 44.4914 76.3591 44.1242M76.3591 44.1242C79.4893 43.5426 83.7451 42.8307 87.22 42.107M76.3591 44.1242C70.0311 47.5658 57.6044 54.2461 49.3839 58.1741C37.9524 63.6341 42.7607 64.7152 51.5583 61.0009C58.0799 58.2504 77.2431 47.0417 87.22 42.107M87.22 42.107C91.0048 41.3214 93.87 40.5208 93.3818 39.8542C93.0654 39.4251 90.7019 40.3836 87.22 42.107ZM94.1258 43.7039C93.6454 46.4227 92.6554 51.371 91.2459 55.1521C89.1955 60.6494 81.7369 83.5131 78.417 90.356C75.0971 97.199 73.2222 99.3138 76.0023 89.8664C78.7825 80.4189 84.2951 66.6042 85.5626 62.6073C86.8323 58.6139 88.7733 53.5092 88.7733 53.5092C88.7733 53.5092 68.0801 82.3965 66.9266 84.1337C65.7731 85.8708 56.1564 95.1201 65.6433 81.2817C75.1278 67.4398 80.7028 59.5478 85.0011 53.4708C86.9109 50.7706 88.5164 48.2955 89.7132 46.3769M64.4557 64.29C63.5221 70.6376 60.9077 87.6224 58.4479 95.7937C55.3919 105.959 51.3152 116.852 50.8324 117.999C50.3465 119.145 44.6771 127.432 48.8062 116.758C52.9352 106.084 56.162 99.1662 58.5743 87.5235C60.1643 79.8338 61.2728 71.3697 61.8432 66.5048M59.4898 68.5911C57.2208 67.9033 51.3761 66.4592 43.3932 66.9174C33.0216 67.5088 19.1545 69.4683 11.3497 70.7892C3.54486 72.11 2.56053 74.92 13.0927 73.2166C23.6242 71.5162 34.7226 70.5514 39.58 70.0831C44.4367 69.6178 50.0077 69.709 52.5168 69.803C54.1331 69.8626 56.1498 70.2653 57.381 70.5431C56.3054 74.6133 45.9689 106.537 41.2541 114.812C36.5363 123.087 37.8342 117.646 38.5563 115.509C39.2748 113.375 42.3594 104.872 46.1632 96.0002C49.9678 87.1255 52.9769 77.1569 53.1368 76.0478C53.2161 75.5025 53.1052 75.3023 52.5924 75.3511C52.0681 75.3945 51.1232 75.6987 49.5257 76.1451C48.2069 76.5139 46.0713 77.1287 43.5381 77.8937M43.5381 77.8937C40.0207 78.955 35.7429 80.3049 31.8532 81.6899C25.1669 84.0671 16.7614 87.0282 7.07152 93.1532C-2.61838 99.2783 1.17059 94.4454 5.53665 91.1828C9.90272 87.9203 14.9005 85.0946 23.9695 81.5726C33.0385 78.0505 45.0879 74.4156 49.1872 73.5877C51.2369 73.1738 53.3957 72.941 55.0514 72.809M43.5381 77.8937C40.827 80.2163 36.3159 83.9671 32.8749 86.2508C27.6095 89.7458 19.4514 94.3165 13.9209 98.4843C8.39342 102.653 3.07811 109.456 2.38403 110.145C1.69298 110.834 -1.24751 116.978 4.53899 111.723C10.3292 106.467 9.80351 106.463 16.2692 101.035C20.7007 97.3112 31.0247 90.4165 39.3875 85.2138M48.8985 79.5858C46.6473 80.7915 43.2251 82.8233 39.3875 85.2138M39.3875 85.2138C36.5916 87.9714 33.1102 91.7938 30.1943 96.1582C24.2469 105.066 18.5573 114.875 13.8973 124.237C9.23722 133.6 15.8727 126.569 16.9171 124.85C17.9585 123.13 21.5296 115.687 28.1833 104.589C31.8896 98.4138 37.6344 93.1479 41.5403 89.4739M41.5403 89.4739C42.4573 86.2948 43.2434 83.0391 45.4196 84.0761C46.5962 84.636 44.6489 86.549 41.5403 89.4739ZM41.5403 89.4739C41.3389 90.1722 41.1321 90.8663 40.9026 91.509C39.6267 95.0895 37.3593 101.057 34.7972 105.827C32.2351 110.597 29.0662 115.038 24.5588 122.005C20.0484 128.972 24.6555 125.137 26.0617 123.657C27.4703 122.181 30.6345 119.089 36.8982 106.98C43.162 94.8708 47.5662 83.4823 47.5662 83.4823"
+                        stroke="#3DA42D" stroke-width="2"
+                        stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </header>
+
+        <footer class="mt-16 ">
+            <div class="mx-auto w-full max-w-screen-xl">
+                <div
+                    class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 py-6 lg:py-8 ">
+                    <div
+                        class="flex items-center md:items-start justify-center md:justify-start">
+                        <a href="/index.html">
+                            <img class="w-[120px] md:w-[150px]"
+                                src="/images/logo.svg" alt>
+
+                        </a>
+                    </div>
+                    <div>
+                        <h2
+                            class="mb-6 text-sm text-red font-black uppercase ">Company</h2>
+                        <ul
+                            class="text-black  font-medium">
+                            <li class="mb-4">
+                                <a href="index.html"
+                                    class=" hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="siwa.html"
+                                    class="hover:underline">Siwa</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="about.html"
+                                    class="hover:underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="questions.html"
+                                    class="hover:underline">Questions</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="seasons.html"
+                                    class="hover:underline">Seasons</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:ms-7 lg:ms-0">
+                        <h2
+                            class="mb-6 text-sm font-black text-red uppercase ">Contact
+                            Us</h2>
+                        <ul
+                            class="text-black font-medium">
+
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Twitter</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#"
+                                    class="hover:underline">Instagram</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Facebook</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="contact.html"
+                                    class="hover:underline">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2
+                            class="mb-6 text-sm font-black text-red uppercase ">Get
+                            in touch</h2>
+                        <p class="text-black font-medium">Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor</p>
+                    </div>
+
+                </div>
+                <div
+                    class="px-4 py-6  flex items-center justify-center">
+                    <span
+                        class="text-sm text-black font-bold sm:text-center">
+                        © <a class="text-[#d65102] font-black" target="_blank"
+                            href="https://megatron-soft.com">Megatron</a>. 2024
+                        Company | All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
+        </script>
+        <script>
+            let language = document.getElementById("language")
+            const handleLang = () => {
+                if(language.checked === true){
+                // window.location = "en"
+                document.documentElement.setAttribute("lang", "en")
+                document.body.dir = "ltr"
+                
+            }else{
+                // window.location = "ar"
+                document.documentElement.setAttribute("lang", "ar")
+                document.body.dir = "rtl"
+            }
+            }
+            language.onchange = () => {
+                handleLang()
+            }
+
+            handleLang()
+            
+        </script>
+    </body>
+</html>
